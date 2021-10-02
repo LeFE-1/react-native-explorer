@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--        android:name=".C_9_3_1.ReactNativeNavigationApplication"-->
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme">
+        <activity android:name=".C_7_2_2.TestBridgeActivity"></activity>
+        <activity
+            android:name=".C_9_1.DrawerLayoutActivity"
+            android:label="@string/title_activity_drawer_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".C_7_1.MCBroadcastActivity" />
+        <activity android:name=".C_7_1.DownloadActivity" />
+        <activity android:name=".C_11_2.PreloadActivity" />
+        <activity android:name=".C_11_2.RNPreloadExampleActivity" />
+        <activity android:name=".C_2_2_2.Activity" />
+        <activity android:name=".C_2_4_2.Activity" />
+        <activity android:name=".C_2_4_2.RNViewOverflowActivity" />
+        <activity android:name=".C_5_2_2.VideoPlayActivity" />
+        <activity android:name=".C_5_2_2.VideoRecordActivity" />
+        <activity android:name=".C_5_2_1.AudioRecordActivity" />
+        <activity android:name=".C_5_2_1.AudioPlayActivity" />
+        <activity android:name=".C_5_4_2.Activity" />
+        <activity android:name=".C_9_2_1.ReactNavigationActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+        <activity android:name=".RNExampleActivity" />
+        <activity android:name=".C_9_3_1.ReactNativeNavigationActivity"/>
+
+    </application>
+
+</manifest>
