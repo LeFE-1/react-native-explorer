@@ -17,7 +17,6 @@
 {
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
-//                                                   moduleName:@"6_1_1"
                                                    moduleName: @"6_1_1"
                                             initialProperties:nil];
   

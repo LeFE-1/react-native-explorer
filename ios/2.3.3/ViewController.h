@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  ViewController.h
 //  2.3.3
 //
 //  Created by Yanda on 2021/10/6.
@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface ViewController : UIViewController
 
-
-@property (strong, nonatomic) UIWindow * window;
 
 @end
 
