@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+
+#import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
@@ -29,7 +31,6 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
-
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 #else
@@ -38,3 +39,4 @@
 }
 
 @end
+

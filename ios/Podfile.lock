@@ -67,11 +67,11 @@ PODS:
   - React-jsinspector (0.60.5)
   - react-native-safe-area-context (0.7.3):
     - React
-  - react-native-video (5.0.2):
-    - React
-    - react-native-video/Video (= 5.0.2)
-  - react-native-video/Video (5.0.2):
-    - React
+  - react-native-video (5.1.1):
+    - React-Core
+    - react-native-video/Video (= 5.1.1)
+  - react-native-video/Video (5.1.1):
+    - React-Core
   - React-RCTActionSheet (0.60.5):
     - React-Core (= 0.60.5)
   - React-RCTAnimation (0.60.5):
@@ -95,13 +95,13 @@ PODS:
     - React-Core (= 0.60.5)
   - React-RCTWebSocket (0.60.5):
     - React-Core (= 0.60.5)
-  - ReactNativeAudioToolkit (2.0.2):
+  - ReactNativeAudioToolkit (2.0.3):
     - React
   - ReactNativeNavigation (4.8.4):
     - React
-  - RNCAsyncStorage (1.8.1):
-    - React
-  - RNCMaskedView (0.1.7):
+  - RNCAsyncStorage (1.12.1):
+    - React-Core
+  - RNCMaskedView (0.1.11):
     - React
   - RNFastImage (7.0.2):
     - React
@@ -109,11 +109,13 @@ PODS:
     - SDWebImageWebPCoder (~> 0.2.3)
   - RNFS (2.14.1):
     - React
-  - RNGestureHandler (1.6.0):
+  - RNGestureHandler (1.10.3):
+    - React-Core
+  - RNReanimated (1.13.3):
+    - React-Core
+  - RNScreens (2.0.0):
     - React
-  - RNReanimated (1.7.0):
-    - React
-  - RNScreens (2.3.0):
+  - RNSVG (12.1.1):
     - React
   - SDWebImage (5.3.1):
     - SDWebImage/Core (= 5.3.1)
@@ -154,11 +156,12 @@ DEPENDENCIES:
   - RNFS (from `../node_modules/react-native-fs`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
-  - RNScreens (from `../node_modules/react-native-screens`)
+  - RNScreens (from `../node_modules/react-native-screens/RNScreens.podspec`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - boost-for-react-native
     - libwebp
     - SDWebImage
@@ -226,7 +229,9 @@ EXTERNAL SOURCES:
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
-    :path: "../node_modules/react-native-screens"
+    :path: "../node_modules/react-native-screens/RNScreens.podspec"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -235,7 +240,7 @@ SPEC CHECKSUMS:
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  libwebp: dba98763e3d8e416d8cc28d038879a34cc08694a
+  libwebp: db273b5a72581ca31985dec5c3b8bc826a5f59ee
   React: 53c53c4d99097af47cf60594b8706b4e3321e722
   React-Core: ba421f6b4f4cbe2fb17c0b6fc675f87622e78a64
   React-cxxreact: 8384287780c4999351ad9b6e7a149d9ed10a2395
@@ -244,7 +249,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 90ad2f9db09513fc763bc757fdc3c4ff8bde2a30
   React-jsinspector: e08662d1bf5b129a3d556eb9ea343a3f40353ae4
   react-native-safe-area-context: 8260e5157617df4b72865f44006797f895b2ada7
-  react-native-video: 961749da457e73bf0b5565edfbaffc25abfb8974
+  react-native-video: 1574074179ecaf6a9dd067116c8f31bf9fec15c8
   React-RCTActionSheet: b0f1ea83f4bf75fb966eae9bfc47b78c8d3efd90
   React-RCTAnimation: 359ba1b5690b1e87cc173558a78e82d35919333e
   React-RCTBlob: 5e2b55f76e9a1c7ae52b826923502ddc3238df24
@@ -255,19 +260,20 @@ SPEC CHECKSUMS:
   React-RCTText: b074d89033583d4f2eb5faf7ea2db3a13c7553a2
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
-  ReactNativeAudioToolkit: 8febb6c0664cf03fdf83eafaf7f645029b66bd62
+  ReactNativeAudioToolkit: e3e27fbcd12080f54f8715c54de7a232d3beb98d
   ReactNativeNavigation: 656ef429622d09e62e50ed162fb23936f95d1f03
-  RNCAsyncStorage: 00bdf63f7f1e0f11d3323533dba4f222e58bf092
-  RNCMaskedView: 90dd32f5b786bd562e876e1421ea77c700cbf71e
+  RNCAsyncStorage: cb9a623793918c6699586281f0b51cbc38f046f9
+  RNCMaskedView: f127cd9652acfa31b91dcff613e07ba18b774db6
   RNFastImage: 9b0c22643872bb7494c8d87bbbb66cc4c0d9e7a2
   RNFS: a8fbe7060fa49157d819466404794ad9c58e58cf
-  RNGestureHandler: dde546180bf24af0b5f737c8ad04b6f3fa51609a
-  RNReanimated: 031fe8d9ea93c2bd689a40f05320ef9d96f74d7f
-  RNScreens: 03bf608b92ac0acf323f47d8f5b63a8f829340c8
-  SDWebImage: a7a32ff2db7cb25511b34add40aab2ca5508d565
-  SDWebImageWebPCoder: 61b41e998177ec9e1cd05299544ad67a68f06d21
+  RNGestureHandler: a479ebd5ed4221a810967000735517df0d2db211
+  RNReanimated: 514a11da3a2bcc6c3dfd9de32b38e2b9bf101926
+  RNScreens: 7704297930777dae13b88bb9f999db17a39bbdf1
+  RNSVG: 551acb6562324b1d52a4e0758f7ca0ec234e278f
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
+  SDWebImageWebPCoder: 947093edd1349d820c40afbd9f42acb6cdecd987
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
-PODFILE CHECKSUM: b83f97ba2d4282322a81e41adbbb29e2120a5824
+PODFILE CHECKSUM: e4bb2a31b598784bf1e2952e06011a0b90effe75
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.1
